@@ -1,15 +1,15 @@
 #include<stdio.h>
 
-void func1(int *p);
-void func2(int **p);
-void func3(int ***p);
-void func4(int ****p);
+void func1(int *p); // 1
+void func2(int **p); // 2
+void func3(int ***p); // 3
+void func4(int ****p); // 4
 
 int main(){
 	int i=100;
-	int *p,**dp,***tp;
+	int *p,**dp,***tp; //pointer
 
-	p=&i;
+	p=&i; 
 	dp=&p;
 	tp=&dp;
 
